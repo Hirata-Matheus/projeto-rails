@@ -35,6 +35,9 @@ group :development, :test do
   # Use SCSS for stylesheets
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  # gem 'minitest-reporters', '~> 1.4.2'
+  # gem 'guard', '~> 2.16.2'
+  # gem 'guard-minitest', '~> 2.4.6'
 end
 
 group :development do
