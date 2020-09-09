@@ -3,12 +3,41 @@
 <head>
   <title>Projeto</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/default/bulmaswatch.min.css">
 </head>
 <body>
-
-<%= yield %>
-
+<header class="header">
+  <div class="container">
+    <nav class="level">
+      <div class="level-left">
+        <div class="level-item">
+          PROJETO - WEB
+        </div>
+      </div>
+      <div class="level-right">
+        <p class="level-item">
+          <%# <%= link_to("Manage Users", users_path, :class => "button is-dark is-outlined") %>
+        </p>
+      </div>
+    </nav>
+  </div>
+</header>
+<section class="section">
+  <div class="container">
+    <%= yield %>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    Hirata Matheus © 2020. Ruby Project Development.
+  </div>
+</footer>
 </body>
+<style>
+  
+</style>
 </html>
